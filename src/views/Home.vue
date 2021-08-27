@@ -1,24 +1,20 @@
 <template>
-  <div class="home">
-    <div class="w-full flex justify-center">
-      <input
-        type="text"
-        placeholder="Enter Pokemon here"
-        class="mt-10 p-2 border-blue-500 border-2"
-      />
-    </div>
+  <div class="w-full flex justify-center">
+    <input
+      type="text"
+      placeholder="Enter Pokemon here"
+      class="mt-10 p-2 border-blue-500 border-2"
+    />
+  </div>
 
-    <div class="mt-10 p-4 flex flex-wrap justify-center">
-      <div
-        class="ml-4 text-2x text-blue-200"
-        v-for="(pokemon, idx) in pokemons"
-        :key="idx"
-      >
-        {{ pokemon.name }}
-      </div>
+  <div class="mt-10 p-4 flex flex-wrap justify-center">
+    <div
+      class="ml-4 text-2x text-blue-200"
+      v-for="(pokemon, idx) in pokemons"
+      :key="idx"
+    >
+      {{ pokemon.name }}
     </div>
-    <h3>Hello World</h3>
-    {{ pokemons }}
   </div>
 </template>
 
